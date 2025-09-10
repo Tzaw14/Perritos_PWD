@@ -1,0 +1,66 @@
+:root {
+  --neon: #00ffcc;
+  --oscuro-base: #211e34;
+  --oscuro-intermedio: #393658;
+  --azul-morado: #505680;
+  --azul-claro: #768ab2;
+  --rosa-claro: #dd8aa2;
+  --texto: #e6f1ff;
+  --error: #ff6666;
+  --rojo: #ff3333;
+  --deshabilitado: #3a3a4f;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--oscuro-base);
+  color: var(--texto);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--neon);
+  margin: 20px 0;
+}
+
+#map {
+  height: 400px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 3px solid var(--azul-morado);
+  border-radius: 12px;
+  box-shadow: 0 0 15px var(--azul-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#location-info {
+  margin: 15px 0;
+  font-size: 18px;
+  color: var(--rosa-claro);
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background: var(--neon);
+  color: var(--oscuro-base);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px var(--neon);
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: var(--azul-claro);
+  color: var(--texto);
+  box-shadow: 0 0 15px var(--rosa-claro);
+}
